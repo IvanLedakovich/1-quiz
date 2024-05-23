@@ -1,0 +1,173 @@
+.poppins-bold {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.inter-bold {
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'slnt' 0;
+}
+
+body {
+	background-color: white;
+}
+
+.circle {
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dot {
+	height: 579px;
+	width: 579px;
+	/* margin-top: 500px; */
+	background-color: #26b6e3;
+	border-radius: 50%;
+	display: inline-block;
+	gap: 0px;
+	opacity: 0px;
+	box-shadow: 0px 0px 25px #26b6e3;
+}
+
+.startTheQuiz {
+	/* width: 483px;
+ height: 288px; */
+	gap: 0px;
+	opacity: 0px;
+	font-family: Poppins;
+	font-size: 96px;
+	font-weight: 400;
+	line-height: 144px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.stepsFrame {
+	height: 50px;
+	margin-top: 40px;
+}
+
+.stepsLine {
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	top: 25px;
+	background: #c9c9c9;
+	z-index: -1;
+}
+
+.stepsNumbersFrame {
+	width: 100%;
+	height: 50px;
+	margin-left: 60px;
+	margin-right: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stepNumberEllipse {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: center;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	gap: 0px;
+	opacity: 1;
+	border: 2px solid #c9c9c9;
+	background-color: #ffffff;
+}
+
+.stepNumberEllipseUpcoming {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: center;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	gap: 0px;
+	opacity: 1;
+	border: 2px solid #26b6e3;
+	background-color: #ffffff;
+}
+
+.additionalContainer {
+	position: relative;
+}
+
+.stepNumber {
+	gap: 0px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	opacity: 1;
+	color: #c9c9c9;
+}
+
+.stepNumberCurrent {
+	gap: 0px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	opacity: 1;
+	color: #ffffff;
+}
+
+.stepNumberUpcoming {
+	gap: 0px;
+	gap: 0px;
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	opacity: 1;
+	color: #26b6e3;
+}
+
+.stepNumberEllipseCurrent {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: center;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	gap: 0px;
+	opacity: 1;
+	border: 2px solid #26b6e3;
+	background-color: #26b6e3;
+	box-shadow: 0px 0px 5px #26b6e3;
+}
+
+.questionBox {
+	width: 1440px;
+	height: 200px;
+	position: relative;
+	margin-top: 50px;
+	padding: 50px 130px 50px 130px;
+	gap: 10px;
+	background-color: #26b6e3;
+}
+
+.questionText {
+	width: 1180px;
+	height: 90px;
+	z-index: -1;
+	position: absolute;
+	font-family: Poppins;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 44.8px;
+	text-align: left;
+	color: #ffffff;
+}
