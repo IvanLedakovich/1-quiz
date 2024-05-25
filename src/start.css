@@ -51,6 +51,7 @@ body {
 
 .stepsFrame {
 	height: 50px;
+	width: 100%;
 	margin-top: 40px;
 }
 
@@ -150,11 +151,9 @@ body {
 }
 
 .questionBox {
-	width: 1440px;
+	width: 100%;
 	height: 200px;
-	position: relative;
 	margin-top: 50px;
-	padding: 50px 130px 50px 130px;
 	gap: 10px;
 	background-color: #26b6e3;
 }
@@ -162,12 +161,246 @@ body {
 .questionText {
 	width: 1180px;
 	height: 90px;
-	z-index: -1;
 	position: absolute;
+	left: 250px;
+	top: 30px;
 	font-family: Poppins;
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 44.8px;
 	text-align: left;
+	color: #ffffff;
+	z-index: 9;
+}
+
+.questionContainer {
+	position: relative;
+}
+
+.answersBox {
+	width: 1180px;
+	height: 232px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	left: 130px;
+	gap: 60px;
+	display: grid;
+	grid-template-columns: repeat(2, 590px);
+	gap: 20px;
+}
+
+.answerButtonDefault {
+	width: 560px;
+	height: 96px;
+	border: 1px solid #26b6e3;
+	border-radius: 10px;
+}
+
+.answerButtonSelected {
+	width: 560px;
+	height: 96px;
+	border: 1px solid #26b6e3;
+	border-radius: 10px;
+	background-color: #26b6e3;
+}
+
+.answerOptionTextSelected {
+	width: 77px;
+	height: 36px;
+	/* position: absolute; */
+	margin-left: 20px;
+	margin-top: 27px;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.answerButtonHovered {
+	width: 560px;
+	height: 96px;
+	border: 1px solid #26b6e3;
+	border-radius: 10px;
+	background-color: #26b7e33e;
+}
+
+.answerOptionTextHovered {
+	width: 77px;
+	height: 36px;
+	/* position: absolute; */
+	margin-left: 20px;
+	margin-top: 27px;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: left;
+	color: #26b6e3;
+}
+
+.answerButtonCorrect {
+	width: 560px;
+	height: 96px;
+	border: 1px solid #00b512;
+	border-radius: 10px;
+	background-color: #00b51237;
+}
+
+.answerOptionTextCorrect {
+	width: 77px;
+	height: 36px;
+	/* position: absolute; */
+	margin-left: 20px;
+	margin-top: 27px;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: left;
+	color: #00b512;
+}
+
+.answerOptionTextIncorrect {
+	width: 77px;
+	height: 36px;
+	/* position: absolute; */
+	margin-left: 20px;
+	margin-top: 27px;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: left;
+	color: #d90000;
+}
+
+.answerButtonIncorrect {
+	width: 560px;
+	height: 96px;
+	border: 1px solid #d90000;
+	border-radius: 10px;
+	background-color: #d900003a;
+}
+
+.answerOptionText {
+	width: 77px;
+	height: 36px;
+	/* position: absolute; */
+	margin-left: 20px;
+	margin-top: 27px;
+	font-family: Poppins;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: left;
+	color: #26b6e3;
+}
+
+.submitButtonDefault {
+	width: 196px;
+	height: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border-radius: 10px;
+	background-color: #c9c9c9;
+}
+
+.submitText {
+	margin-left: 0px;
+	margin-top: -62px;
+	line-height: 51px;
+	vertical-align: middle;
+	font-family: Poppins;
+	font-size: 32px;
+	font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+}
+
+.submitButtonWorking {
+	width: 196px;
+	height: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border-radius: 10px;
+	background-color: #26b6e3;
+}
+
+.submitTextWorking {
+	margin-left: 0px;
+	margin-top: -62px;
+	line-height: 51px;
+	vertical-align: middle;
+	font-family: Poppins;
+	font-size: 32px;
+	font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+}
+
+.nextButton {
+	width: 151px;
+	height: 72px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border-radius: 10px;
+	background-color: #26b6e3;
+}
+
+.nextButtonText {
+	margin-left: 0px;
+	margin-top: -62px;
+	line-height: 51px;
+	vertical-align: middle;
+	font-family: Poppins;
+	font-size: 32px;
+	font-weight: 500;
+	text-align: center;
+	color: #ffffff;
+}
+
+.scoreText {
+	width: 845px;
+	height: 144px;
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Poppins;
+	font-size: 96px;
+	font-weight: 400;
+	line-height: 144px;
+	text-align: center;
+	color: #26b6e3;
+}
+
+.dotStartAgain {
+	height: 395px;
+	width: 395px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #26b6e3;
+	border-radius: 50%;
+	display: inline-block;
+	gap: 0px;
+	opacity: 0px;
+	box-shadow: 0px 0px 25px #26b6e3;
+}
+
+.startAgain {
+	width: 190px;
+	height: 192px;
+	font-family: Poppins;
+	font-size: 64px;
+	margin-top: 100px;
+	margin-left: 105px;
+	font-weight: 400;
+	line-height: 96px;
+	text-align: center;
 	color: #ffffff;
 }
