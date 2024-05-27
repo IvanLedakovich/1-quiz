@@ -138,32 +138,47 @@ function showQuestion() {
 }
 
 function clickAnswerButton1() {
-	document.getElementById('answerButtonDefault1').className =
-		'answerButtonSelected'
-	document.getElementById('answerOptionText1').className =
-		'answerOptionTextSelected'
-	document.getElementById('submitButton').className = 'submitButtonWorking'
+	if (answerChosen === false) {
+		document.getElementById('answerButtonDefault1').className =
+			'answerButtonSelected'
+		document.getElementById('answerOptionText1').className =
+			'answerOptionTextSelected'
+		document.getElementById('submitButton').className = 'submitButtonWorking'
+		answerChosen = 'true'
+	}
 }
 
 function clickAnswerButton2() {
-	document.getElementById('answerButtonDefault2').className =
-		'answerButtonSelected'
-	document.getElementById('answerOptionText2').className =
-		'answerOptionTextSelected'
+	if (answerChosen === false) {
+		document.getElementById('answerButtonDefault2').className =
+			'answerButtonSelected'
+		document.getElementById('answerOptionText2').className =
+			'answerOptionTextSelected'
+		document.getElementById('submitButton').className = 'submitButtonWorking'
+		answerChosen = 'true'
+	}
 }
 
 function clickAnswerButton3() {
-	document.getElementById('answerButtonDefault3').className =
-		'answerButtonSelected'
-	document.getElementById('answerOptionText3').className =
-		'answerOptionTextSelected'
+	if (answerChosen === false) {
+		document.getElementById('answerButtonDefault3').className =
+			'answerButtonSelected'
+		document.getElementById('answerOptionText3').className =
+			'answerOptionTextSelected'
+		document.getElementById('submitButton').className = 'submitButtonWorking'
+		answerChosen = 'true'
+	}
 }
 
 function clickAnswerButton4() {
-	document.getElementById('answerButtonDefault4').className =
-		'answerButtonSelected'
-	document.getElementById('answerOptionText4').className =
-		'answerOptionTextSelected'
+	if (answerChosen === false) {
+		document.getElementById('answerButtonDefault4').className =
+			'answerButtonSelected'
+		document.getElementById('answerOptionText4').className =
+			'answerOptionTextSelected'
+		document.getElementById('submitButton').className = 'submitButtonWorking'
+		answerChosen = 'true'
+	}
 }
 
 function proceedToTheNextQuestion() {
@@ -175,21 +190,62 @@ function proceedToTheNextQuestion() {
 		document.getElementById(`answerOptionText${i}`).className =
 			'answerOptionText'
 	}
+
+	document.getElementById('submitButton').style.display = 'block'
+	document.getElementById('submitText').style.display = 'block'
+	document.getElementById('nextButton').style.display = 'none'
+	document.getElementById('nextButtonText').style.display = 'none'
+
+	for (let i = 0; i < currentQuestionIndex + 1; i++) {
+		document.getElementById(`stepNumberEllipse${i + 1}`).className =
+			'stepNumberEllipse'
+		document.getElementById(`stepNumber${i + 1}`).className = 'stepNumber'
+	}
+
+	console.log(`stepNumberEllipse${currentQuestionIndex + 2}`)
+	document.getElementById(
+		`stepNumberEllipse${currentQuestionIndex + 2}`
+	).className = 'stepNumberEllipseCurrent'
+	document.getElementById(`stepNumber${currentQuestionIndex + 2}`).className =
+		'stepNumberCurrent'
 }
 
 function checkAnswer() {
 	for (let i = 0; i < 4; i++) {
 		if (
-			(document.getElementById(`answerButtonDefault${i + 1}`).className =
-				'answerButtonSelected')
+			document.getElementById(`answerButtonDefault${i + 1}`).className ===
+			'answerButtonSelected'
 		) {
 			if (true === questions[currentQuestionIndex].answers[i].correct) {
 				score++
-
-				proceedToTheNextQuestion()
 			}
 		}
-
-		break
 	}
+
+	for (let i = 0; i < 4; i++) {
+		if (
+			document.getElementById(`answerButtonDefault${i + 1}`).className ==
+				'answerButtonSelected' &&
+			questions[currentQuestionIndex].answers[i].correct == false
+		) {
+			document.getElementById(`answerButtonDefault${i + 1}`).className =
+				'answerButtonIncorrect'
+			document.getElementById(`answerOptionText${i + 1}`).className =
+				'answerOptionTextIncorrect'
+		}
+
+		if (questions[currentQuestionIndex].answers[i].correct == true) {
+			document.getElementById(`answerButtonDefault${i + 1}`).className =
+				'answerButtonCorrect'
+			document.getElementById(`answerOptionText${i + 1}`).className =
+				'answerOptionTextCorrect'
+		}
+	}
+
+	document.getElementById('submitButton').style.display = 'none'
+	document.getElementById('submitText').style.display = 'none'
+	document.getElementById('nextButton').style.display = 'block'
+	document.getElementById('nextButtonText').style.display = 'block'
+
+	console.log(currentQuestionIndex)
 }
