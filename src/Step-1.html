@@ -13,183 +13,107 @@
 	</head>
 
 	<body>
-		<!-- <div class="circle">
-   <span class="dot">
-    <h1 class="startTheQuiz">Start The Quiz!</h1>
-   </span>
-  </div> -->
+		<div id="startCircleDiv" class="circle" onclick="startTheQuizFunction()">
+			<span id="startCircle" class="dot" onclick="startTheQuizFunction()">
+				<h1
+					id="startTheQuizText"
+					class="startTheQuiz"
+					onclick="startTheQuizFunction()"
+				>
+					Start The Quiz!
+				</h1>
+			</span>
+		</div>
 
-		<!-- <div class="stepsFrame">
-			<div class="additionalContainer">
-				<div class="stepsLine"></div>
-				<div class="stepsNumbersFrame">
-					<div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">1</h1> -->
-		<!-- <h1 class="stepNumberCurrent">1</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">1</h1> -->
-		<!-- </div>
-					<div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">2</h1> -->
-		<!-- <h1 class="stepNumberCurrent">2</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">2</h1> -->
-		<!-- </div>
-					<div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">3</h1> -->
-		<!-- <h1 class="stepNumberCurrent">3</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">3</h1> -->
-		<!-- </div>
-					<div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">4</h1> -->
-		<!-- <h1 class="stepNumberCurrent">4</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">4</h1> -->
-		<!-- </div>
-					<div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">5</h1> -->
-		<!-- <h1 class="stepNumberCurrent">5</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">5</h1> -->
-		<!-- </div> -->
-		<!-- <div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">6</h1> -->
-		<!-- <h1 class="stepNumberCurrent">6</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">6</h1> -->
-		<!-- </div> -->
-		<!-- <div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">7</h1> -->
-		<!-- <h1 class="stepNumberCurrent">7</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">7</h1>
-					</div> -->
-		<!-- <div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">8</h1> -->
-		<!-- <h1 class="stepNumberCurrent">8</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">8</h1>
-					</div> -->
-		<!-- <div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">9</h1> -->
-		<!-- <h1 class="stepNumberCurrent">9</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">9</h1>
-					</div> -->
-		<!-- <div class="stepNumberEllipse"> -->
-		<!-- <div class="stepNumberEllipseCurrent"> -->
-		<!-- <div class="stepNumberEllipseUpcoming"> -->
-		<!-- <h1 class="stepNumber">10</h1> -->
-		<!-- <h1 class="stepNumberCurrent">10</h1> -->
-		<!-- <h1 class="stepNumberUpcoming">10</h1>
+		<div id="stepsFrame" class="stepsFrame">
+			<div id="additionalContainer" class="additionalContainer">
+				<div id="stepsLine" class="stepsLine"></div>
+				<div id="stepsNumbersFrame" class="stepsNumbersFrame">
+					<div id="stepNumberEllipse1" class="stepNumberEllipse">
+						<h1 id="stepNumber1" class="stepNumber">1</h1>
+					</div>
+					<div id="stepNumberEllipse2" class="stepNumberEllipse">
+						<h1 id="stepNumber2" class="stepNumber">2</h1>
+					</div>
+					<div id="stepNumberEllipse3" class="stepNumberEllipse">
+						<h1 id="stepNumber3" class="stepNumber">3</h1>
+					</div>
+					<div id="stepNumberEllipse4" class="stepNumberEllipse">
+						<h1 id="stepNumber4" class="stepNumber">4</h1>
+					</div>
+					<div id="stepNumberEllipse5" class="stepNumberEllipse">
+						<h1 id="stepNumber5" class="stepNumber">5</h1>
+					</div>
+					<div id="stepNumberEllipse6" class="stepNumberEllipse">
+						<h1 id="stepNumber6" class="stepNumber">6</h1>
+					</div>
+					<div id="stepNumberEllipse7" class="stepNumberEllipse">
+						<h1 id="stepNumber7" class="stepNumber">7</h1>
+					</div>
+					<div id="stepNumberEllipse8" class="stepNumberEllipse">
+						<h1 id="stepNumber8" class="stepNumber">8</h1>
+					</div>
+					<div id="stepNumberEllipse9" class="stepNumberEllipse">
+						<h1 id="stepNumber9" class="stepNumber">9</h1>
+					</div>
+					<div id="stepNumberEllipse10" class="stepNumberEllipse">
+						<h1 id="stepNumber10" class="stepNumber">10</h1>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
-		<!-- <div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
+		<div id="questionContainer" class="questionContainer">
+			<div id="questionBox" class="questionBox"></div>
+			<h1 id="questionText" class="questionText">
 				An interface design application that runs in the browser with team-based
 				collaborative design projects
 			</h1>
-		</div> -->
-		<!-- <div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div><div class="questionContainer">
-			<div class="questionBox"></div>
-			<h1 class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
-		</div> -->
+		</div>
 
-		<!-- <div class="answersBox">
-			<div class="answerButtonDefault">
-				<div class="answerOptionText">Figma</div>
+		<div onclick="clickAnswerButton1()" id="answersBox" class="answersBox">
+			<div id="answerButtonDefault1" class="answerButtonDefault">
+				<div id="answerOptionText1" class="answerOptionText">Figma</div>
 			</div>
-			<div class="answerButtonHover">
-				<div class="answerOptionTextHover">Figma</div>
+			<div
+				onclick="clickAnswerButton2()"
+				id="answerButtonDefault2"
+				class="answerButtonDefault"
+			>
+				<div id="answerOptionText2" class="answerOptionText">Figma</div>
 			</div>
-			<div class="answerButtonSelected">
-				<div class="answerOptionTextSelected">Figma</div>
+			<div
+				onclick="clickAnswerButton3()"
+				id="answerButtonDefault3"
+				class="answerButtonDefault"
+			>
+				<div id="answerOptionText3" class="answerOptionText">Figma</div>
 			</div>
-			<div class="answerButtonCorrect">
-				<div class="answerOptionTextCorrect">Figma</div>
+			<div
+				onclick="clickAnswerButton4()"
+				id="answerButtonDefault4"
+				class="answerButtonDefault"
+			>
+				<div id="answerOptionText4" class="answerOptionText">Figma</div>
 			</div>
-			<div class="answerButtonIncorrect">
-				<div class="answerOptionTextIncorrect">Figma</div>
-			</div>
-		</div> -->
+		</div>
 
-		<!-- <div class="submitButtonDefault"></div>
-		<h1 class="submitText">Submit</h1> -->
-		<!-- <div class="submitButtonWorking"></div>
-		<h1 class="submitTextWorking">Submit</h1> -->
-		<!-- <div class="nextButton"></div>
-		<h1 class="nextButtonText">Next</h1> -->
+		<div
+			onclick="checkAnswer()"
+			id="submitButton"
+			class="submitButtonDefault"
+		></div>
+		<h1 onclick="checkAnswer()" id="submitText" class="submitText">Submit</h1>
+		<div class="nextButton"></div>
+		<h1 class="nextButtonText">Next</h1>
 
-		<h1 class="scoreText">Your score is !</h1>
+		<!-- <h1 class="scoreText">Your score is !</h1>
 		<div class="circle">
 			<span class="dotStartAgain">
 				<h1 class="startAgain">Start Again</h1>
 			</span>
-		</div>
+		</div> -->
+
+		<script src="script.js"></script>
 	</body>
 </html>
