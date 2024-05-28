@@ -368,6 +368,7 @@ body {
 }
 
 .scoreText {
+	display: none;
 	width: 845px;
 	height: 144px;
 	margin-top: 120px;
@@ -381,7 +382,15 @@ body {
 	color: #26b6e3;
 }
 
+.startAgainCircle {
+	display: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .dotStartAgain {
+	display: none;
 	height: 395px;
 	width: 395px;
 	margin-left: auto;
@@ -395,7 +404,9 @@ body {
 }
 
 .startAgain {
+	display: none;
 	width: 190px;
+	top: 130;
 	height: 192px;
 	font-family: Poppins;
 	font-size: 64px;

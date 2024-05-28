@@ -71,58 +71,34 @@
 			</h1>
 		</div>
 
-		<div onclick="clickAnswerButton1()" id="answersBox" class="answersBox">
+		<div id="answersBox" class="answersBox">
 			<div id="answerButtonDefault1" class="answerButtonDefault">
 				<div id="answerOptionText1" class="answerOptionText">Figma</div>
 			</div>
-			<div
-				onclick="clickAnswerButton2()"
-				id="answerButtonDefault2"
-				class="answerButtonDefault"
-			>
+			<div id="answerButtonDefault2" class="answerButtonDefault">
 				<div id="answerOptionText2" class="answerOptionText">Figma</div>
 			</div>
-			<div
-				onclick="clickAnswerButton3()"
-				id="answerButtonDefault3"
-				class="answerButtonDefault"
-			>
+			<div id="answerButtonDefault3" class="answerButtonDefault">
 				<div id="answerOptionText3" class="answerOptionText">Figma</div>
 			</div>
-			<div
-				onclick="clickAnswerButton4()"
-				id="answerButtonDefault4"
-				class="answerButtonDefault"
-			>
+			<div id="answerButtonDefault4" class="answerButtonDefault">
 				<div id="answerOptionText4" class="answerOptionText">Figma</div>
 			</div>
 		</div>
 
-		<div
-			onclick="checkAnswer()"
-			id="submitButton"
-			class="submitButtonDefault"
-		></div>
-		<h1 onclick="checkAnswer()" id="submitText" class="submitText">Submit</h1>
-		<div
-			onclick="proceedToTheNextQuestion()"
-			id="nextButton"
-			class="nextButton"
-		></div>
-		<h1
-			onclick="proceedToTheNextQuestion()"
-			id="nextButtonText"
-			class="nextButtonText"
-		>
-			Next
-		</h1>
+		<div id="submitButton" class="submitButtonDefault"></div>
+		<h1 id="submitText" class="submitText">Submit</h1>
+		<div id="nextButton" class="nextButton"></div>
+		<h1 id="nextButtonText" class="nextButtonText">Next</h1>
 
-		<!-- <h1 class="scoreText">Your score is !</h1>
-		<div class="circle">
-			<span class="dotStartAgain">
-				<h1 class="startAgain">Start Again</h1>
+		<h1 id="scoreText" class="scoreText">Your score is !</h1>
+		<div id="scoreCircle" class="startAgainCircle">
+			<span onclick="restart()" id="startAgainDot" class="dotStartAgain">
+				<h1 onclick="restart()" id="startAgainText" class="startAgain">
+					Start Again
+				</h1>
 			</span>
-		</div> -->
+		</div>
 
 		<script src="script.js"></script>
 	</body>
