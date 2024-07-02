@@ -152,15 +152,23 @@ body {
 	height: 200px;
 	margin-top: 50px;
 	gap: 10px;
+	position: relative;
 	background-color: #26b6e3;
 }
 
 .questionText {
-	width: 1180px;
-	height: 90px;
-	position: absolute;
-	left: 250px;
-	top: 30px;
+	/* width: 1180px;
+	height: 90px; */
+	position: relative;
+	/* left: 250px;
+	top: 30px; */
+
+	width: 75%;
+	/* width: 1180px; */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -150px;
+
 	font-family: Poppins;
 	font-size: 32px;
 	font-weight: 400;
@@ -172,11 +180,13 @@ body {
 
 .questionContainer {
 	display: none;
+	height: 200px;
 	position: relative;
 }
 
 .answersBox {
-	width: 1180px;
+	width: 100%;
+	/* width: 1180px; */
 	height: 232px;
 	margin-left: auto;
 	margin-right: auto;
@@ -416,4 +426,10 @@ body {
 	line-height: 96px;
 	text-align: center;
 	color: #ffffff;
+}
+
+@media (max-width: 1300px) {
+	.questionText {
+		width: 900px;
+	}
 }
