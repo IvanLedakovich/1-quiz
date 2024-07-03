@@ -26,7 +26,6 @@ body {
 .dot {
 	height: 579px;
 	width: 579px;
-	/* margin-top: 500px; */
 	background-color: #26b6e3;
 	border-radius: 50%;
 	display: inline-block;
@@ -36,8 +35,6 @@ body {
 }
 
 .startTheQuiz {
-	/* width: 483px;
- height: 288px; */
 	margin-top: 130px;
 	font-family: Poppins;
 	font-size: 96px;
@@ -158,14 +155,8 @@ body {
 }
 
 .questionText {
-	/* width: 1180px;
-	height: 90px; */
 	position: relative;
-	/* left: 250px;
-	top: 30px; */
-
 	width: 75%;
-	/* width: 1180px; */
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: -150px;
@@ -187,7 +178,6 @@ body {
 
 .answersBox {
 	width: 100%;
-	/* width: 1180px; */
 	height: 232px;
 	margin-left: auto;
 	margin-right: auto;
@@ -223,7 +213,6 @@ body {
 .answerOptionTextSelected {
 	width: 77px;
 	height: 36px;
-	/* position: absolute; */
 	margin-left: 20px;
 	margin-top: 27px;
 	font-family: Poppins;
@@ -247,7 +236,6 @@ body {
 .answerOptionTextHovered {
 	width: 77px;
 	height: 36px;
-	/* position: absolute; */
 	margin-left: 20px;
 	margin-top: 27px;
 	font-family: Poppins;
@@ -271,7 +259,6 @@ body {
 .answerOptionTextCorrect {
 	width: 77px;
 	height: 36px;
-	/* position: absolute; */
 	margin-left: 20px;
 	margin-top: 27px;
 	font-family: Poppins;
@@ -285,7 +272,6 @@ body {
 .answerOptionTextIncorrect {
 	width: 77px;
 	height: 36px;
-	/* position: absolute; */
 	margin-left: 20px;
 	margin-top: 27px;
 	font-family: Poppins;
@@ -309,7 +295,6 @@ body {
 .answerOptionText {
 	width: 77px;
 	height: 36px;
-	/* position: absolute; */
 	margin-left: 20px;
 	margin-top: 27px;
 	font-family: Poppins;
