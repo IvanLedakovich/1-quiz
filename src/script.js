@@ -165,11 +165,13 @@ function showQuestion() {
 	if (questions[currentQuestionIndex]) {
 		currentQuestion = questions[currentQuestionIndex]
 		document.getElementById('questionText').innerHTML = currentQuestion.question
+
+		console.log('changed')
 	}
 }
 
 function clickAnswerButton1() {
-	if (answerChosen == false) {
+	if (answerChosen === false) {
 		document.getElementById('answerButtonDefault1').className =
 			'answerButtonSelected'
 		document.getElementById('answerOptionText1').className =
@@ -191,7 +193,7 @@ function clickAnswerButton2() {
 }
 
 function clickAnswerButton3() {
-	if (answerChosen == false) {
+	if (answerChosen === false) {
 		document.getElementById('answerButtonDefault3').className =
 			'answerButtonSelected'
 		document.getElementById('answerOptionText3').className =
@@ -202,7 +204,7 @@ function clickAnswerButton3() {
 }
 
 function clickAnswerButton4() {
-	if (answerChosen == false) {
+	if (answerChosen === false) {
 		document.getElementById('answerButtonDefault4').className =
 			'answerButtonSelected'
 		document.getElementById('answerOptionText4').className =
@@ -213,10 +215,10 @@ function clickAnswerButton4() {
 }
 
 function proceedToTheNextQuestion() {
+	answerChosen = false
 	currentQuestionIndex++
 	showQuestion()
 
-	console.log(currentQuestionIndex)
 	if (currentQuestionIndex === 10) {
 		document.getElementById('answersBox').style.display = 'none'
 		document.getElementById('stepsFrame').style.display = 'none'
@@ -255,6 +257,7 @@ function proceedToTheNextQuestion() {
 
 		document.getElementById('submitButton').style.display = 'block'
 		document.getElementById('submitText').style.display = 'block'
+		document.getElementById('submitButton').className = 'submitButtonDefault'
 		document.getElementById('nextButton').style.display = 'none'
 		document.getElementById('nextButtonText').style.display = 'none'
 
@@ -269,47 +272,47 @@ function proceedToTheNextQuestion() {
 		).className = 'stepNumberEllipseCurrent'
 		document.getElementById(`stepNumber${currentQuestionIndex + 1}`).className =
 			'stepNumberCurrent'
-
-		answerChosen = false
 	}
 }
 
 function checkAnswer() {
-	for (let i = 0; i < 4; i++) {
-		if (
-			document.getElementById(`answerButtonDefault${i + 1}`).className ===
-			'answerButtonSelected'
-		) {
-			if (questions[currentQuestionIndex].answers[i].correct === true) {
-				score++
+	if (answerChosen == true) {
+		for (let i = 0; i < 4; i++) {
+			if (
+				document.getElementById(`answerButtonDefault${i + 1}`).className ===
+				'answerButtonSelected'
+			) {
+				if (questions[currentQuestionIndex].answers[i].correct === true) {
+					score++
+				}
 			}
 		}
-	}
 
-	for (let i = 0; i < 4; i++) {
-		if (
-			document.getElementById(`answerButtonDefault${i + 1}`).className ==
-				'answerButtonSelected' &&
-			questions[currentQuestionIndex].answers[i].correct == false
-		) {
-			document.getElementById(`answerButtonDefault${i + 1}`).className =
-				'answerButtonIncorrect'
-			document.getElementById(`answerOptionText${i + 1}`).className =
-				'answerOptionTextIncorrect'
+		for (let i = 0; i < 4; i++) {
+			if (
+				document.getElementById(`answerButtonDefault${i + 1}`).className ==
+					'answerButtonSelected' &&
+				questions[currentQuestionIndex].answers[i].correct == false
+			) {
+				document.getElementById(`answerButtonDefault${i + 1}`).className =
+					'answerButtonIncorrect'
+				document.getElementById(`answerOptionText${i + 1}`).className =
+					'answerOptionTextIncorrect'
+			}
+
+			if (questions[currentQuestionIndex].answers[i].correct == true) {
+				document.getElementById(`answerButtonDefault${i + 1}`).className =
+					'answerButtonCorrect'
+				document.getElementById(`answerOptionText${i + 1}`).className =
+					'answerOptionTextCorrect'
+			}
 		}
 
-		if (questions[currentQuestionIndex].answers[i].correct == true) {
-			document.getElementById(`answerButtonDefault${i + 1}`).className =
-				'answerButtonCorrect'
-			document.getElementById(`answerOptionText${i + 1}`).className =
-				'answerOptionTextCorrect'
-		}
+		document.getElementById('submitButton').style.display = 'none'
+		document.getElementById('submitText').style.display = 'none'
+		document.getElementById('nextButton').style.display = 'block'
+		document.getElementById('nextButtonText').style.display = 'block'
 	}
-
-	document.getElementById('submitButton').style.display = 'none'
-	document.getElementById('submitText').style.display = 'none'
-	document.getElementById('nextButton').style.display = 'block'
-	document.getElementById('nextButtonText').style.display = 'block'
 }
 
 function restart() {

@@ -98,6 +98,7 @@ body {
 
 .additionalContainer {
 	position: relative;
+	align-self: center;
 }
 
 .stepNumber {
@@ -464,14 +465,42 @@ body {
 }
 
 @media (max-width: 594px) {
+	.dot {
+		height: 350px;
+		width: 350px;
+	}
+
+	.startTheQuiz {
+		margin-top: 100px;
+		line-height: 75px;
+		font-size: 65px;
+	}
+
+	.scoreText {
+		width: 377px;
+		font-size: 48px;
+	}
+
+	.dotStartAgain {
+		height: 350px;
+		width: 350px;
+	}
+
+	.startAgain {
+		margin-top: 79px;
+		margin-left: 83px;
+	}
+
 	.questionText {
 		width: 80%;
 		font-size: 24px;
-		margin-top: -193px;
+		margin-top: -164px;
+		line-height: 28px;
 	}
 	.answersBox {
-		height: 450px;
+		height: 336px;
 		grid-template-columns: repeat(1, 100%);
+		gap: 0px;
 	}
 
 	.answerButtonIncorrect {
@@ -507,5 +536,122 @@ body {
 	.stepNumberEllipse {
 		width: 28px;
 		height: 28px;
+	}
+
+	.stepsLine {
+		top: 15px;
+	}
+
+	.stepNumber {
+		margin-bottom: 15px;
+	}
+
+	.stepNumberCurrent {
+		position: relative;
+		align-content: center;
+		margin-bottom: 15px;
+	}
+
+	.stepsNumbersFrame {
+		height: 32px;
+	}
+
+	.stepNumberCurrent {
+		position: relative;
+		bottom: 8px;
+	}
+
+	.stepNumber {
+		position: relative;
+		bottom: 8px;
+	}
+
+	.stepNumberUpcoming {
+		position: relative;
+		bottom: 8px;
+	}
+
+	.answerButtonDefault {
+		height: 62px;
+	}
+
+	.answerButtonCorrect {
+		height: 62px;
+	}
+
+	.answerButtonDefault:hover {
+		height: 62px;
+	}
+
+	.answerButtonIncorrect {
+		height: 62px;
+	}
+
+	.answerButtonSelected {
+		height: 62px;
+	}
+
+	.stepNumberEllipse {
+		border: 1.5px solid #c9c9c9;
+	}
+
+	.stepNumberEllipseCurrent {
+		border: 1.5px solid #26b6e3;
+	}
+
+	.stepNumberEllipseUpcoming {
+		border: 1.5px solid #26b6e3;
+	}
+
+	.questionBox {
+		margin-top: 15px;
+	}
+
+	.answerOptionTextSelected {
+		margin-top: 12px;
+	}
+
+	.answerOptionText {
+		margin-top: 12px;
+	}
+
+	.answerOptionTextHovered {
+		margin-top: 12px;
+	}
+
+	.answerOptionTextCorrect {
+		margin-top: 12px;
+	}
+
+	.answerOptionTextIncorrect {
+		margin-top: 12px;
+	}
+
+	.submitButtonDefault {
+		transform: scale(0.7);
+		margin-top: 15px;
+	}
+
+	.submitButtonWorking {
+		transform: scale(0.7);
+		margin-top: 15px;
+	}
+
+	.submitButtonWorking:hover {
+		transform: scale(0.7);
+		margin-top: 15px;
+	}
+
+	.submitText {
+		transform: scale(0.7);
+	}
+
+	.nextButton {
+		transform: scale(0.7);
+		margin-top: 15px;
+	}
+
+	.nextButtonText {
+		transform: scale(0.7);
 	}
 }
