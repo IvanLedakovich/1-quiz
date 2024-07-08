@@ -1,3 +1,7 @@
+---
+permalink: /src/index.html
+---
+
 # Interactive Quiz Game using only JS, HTML, CSS
 
 ## Tech stack: HTML, CSS, JavaScript (no frameworks and libs allowed)
