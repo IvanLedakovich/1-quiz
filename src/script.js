@@ -1,105 +1,98 @@
 const questions = [
 	{
 		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+			'What is the process of starting or restarting a computer called?',
 		answers: [
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false }
+			{ text: 'Booting', correct: true },
+			{ text: 'Start up point', correct: false },
+			{ text: 'Connecting', correct: false },
+			{ text: 'Resetting', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'How many bits are in a byte?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false }
+			{ text: '16 bits', correct: false },
+			{ text: '8 bits', correct: true },
+			{ text: '10 bits', correct: false },
+			{ text: '12 bits', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'What was the first search engine on the Internet?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false }
+			{ text: 'Google', correct: false },
+			{ text: 'Bing', correct: false },
+			{ text: 'Archie', correct: true },
+			{ text: 'Yahoo', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'How many bits are used in an IPv6 address?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true }
+			{ text: '16', correct: false },
+			{ text: '32', correct: false },
+			{ text: '64', correct: false },
+			{ text: '128', correct: true }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'What was the first web browser invented in 1990?',
 		answers: [
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false }
+			{ text: 'WorldWideWeb', correct: true },
+			{ text: 'Internet Explorer', correct: false },
+			{ text: 'Mosaic', correct: false },
+			{ text: 'Nexus', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'Which technology is used to record cryptocurrency transactions?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false }
+			{ text: 'Mining', correct: false },
+			{ text: 'Blockchain', correct: true },
+			{ text: 'Digital wallet', correct: false },
+			{ text: 'Token', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'What is one of the advantages of information technology?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false }
+			{ text: 'Easy to handle', correct: false },
+			{ text: 'Both A and B', correct: false },
+			{ text: 'Sreamline communication', correct: true },
+			{ text: 'None', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'What was the name of the first computer virus?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true }
+			{ text: 'Rabbit', correct: false },
+			{ text: 'Elk Cloner', correct: false },
+			{ text: 'SCA Virus', correct: false },
+			{ text: 'Creeper program', correct: true }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'What technology enables telephone calls over the Internet?',
 		answers: [
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false }
+			{ text: 'VoIP', correct: true },
+			{ text: 'Bluetooth', correct: false },
+			{ text: 'Ethernet', correct: false },
+			{ text: 'All of the Above', correct: false }
 		]
 	},
 	{
-		question:
-			'An interface design application that runs in the browser with team-based collaborative design projects',
+		question: 'What does CPU stand for?',
 		answers: [
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: true },
-			{ text: 'Figma', correct: false },
-			{ text: 'Figma', correct: false }
+			{ text: 'Critical Processing Unit', correct: false },
+			{ text: 'Central Processing Unit', correct: true },
+			{ text: 'Crutioal Processing Unit', correct: false },
+			{ text: 'Central Printing Unit', correct: false }
 		]
 	}
 ]
+
+let shuffledArray = questions.sort(() => Math.random() - 0.5)
 
 let currentQuestionIndex = 0
 let score = 0
@@ -138,9 +131,9 @@ nextButtonText.addEventListener('click', () => proceedToTheNextQuestion())
 function startTheQuizFunction() {
 	document.getElementById('startCircleDiv').style.display = 'none'
 	document.getElementById('stepsFrame').style.display = 'block'
-	document.getElementById('questionContainer').style.display = 'block'
+	document.getElementById('questionContainer').style.display = 'flex'
 	document.getElementById('answersBox').style.display = 'grid'
-	document.getElementById('questionContainer').style.display = 'block'
+	document.getElementById('questionContainer').style.display = 'flex'
 	document.getElementById('submitButton').style.display = 'block'
 	document.getElementById('submitText').style.display = 'block'
 
@@ -162,56 +155,75 @@ function startTheQuizFunction() {
 }
 
 function showQuestion() {
-	if (questions[currentQuestionIndex]) {
-		currentQuestion = questions[currentQuestionIndex]
+	if (shuffledArray[currentQuestionIndex]) {
+		currentQuestion = shuffledArray[currentQuestionIndex]
 		document.getElementById('questionText').innerHTML = currentQuestion.question
 
-		console.log('changed')
+		for (let i = 1; i < 5; i++) {
+			document.getElementById(`answerOptionText${i}`).innerHTML =
+				currentQuestion.answers[i - 1].text
+		}
 	}
 }
 
 function clickAnswerButton1() {
-	if (answerChosen === false) {
-		document.getElementById('answerButtonDefault1').className =
-			'answerButtonSelected'
-		document.getElementById('answerOptionText1').className =
-			'answerOptionTextSelected'
-		document.getElementById('submitButton').className = 'submitButtonWorking'
-		answerChosen = true
+	for (let i = 1; i < 5; i++) {
+		document.getElementById(`answerButtonDefault${i}`).className =
+			'answerButtonDefault'
+		document.getElementById(`answerOptionText${i}`).className =
+			'answerOptionText'
 	}
+	document.getElementById('answerButtonDefault1').className =
+		'answerButtonSelected'
+	document.getElementById('answerOptionText1').className =
+		'answerOptionTextSelected'
+	document.getElementById('submitButton').className = 'submitButtonWorking'
+	answerChosen = true
 }
 
 function clickAnswerButton2() {
-	if (answerChosen === false) {
-		document.getElementById('answerButtonDefault2').className =
-			'answerButtonSelected'
-		document.getElementById('answerOptionText2').className =
-			'answerOptionTextSelected'
-		document.getElementById('submitButton').className = 'submitButtonWorking'
-		answerChosen = true
+	for (let i = 1; i < 5; i++) {
+		document.getElementById(`answerButtonDefault${i}`).className =
+			'answerButtonDefault'
+		document.getElementById(`answerOptionText${i}`).className =
+			'answerOptionText'
 	}
+	document.getElementById('answerButtonDefault2').className =
+		'answerButtonSelected'
+	document.getElementById('answerOptionText2').className =
+		'answerOptionTextSelected'
+	document.getElementById('submitButton').className = 'submitButtonWorking'
+	answerChosen = true
 }
 
 function clickAnswerButton3() {
-	if (answerChosen === false) {
-		document.getElementById('answerButtonDefault3').className =
-			'answerButtonSelected'
-		document.getElementById('answerOptionText3').className =
-			'answerOptionTextSelected'
-		document.getElementById('submitButton').className = 'submitButtonWorking'
-		answerChosen = true
+	for (let i = 1; i < 5; i++) {
+		document.getElementById(`answerButtonDefault${i}`).className =
+			'answerButtonDefault'
+		document.getElementById(`answerOptionText${i}`).className =
+			'answerOptionText'
 	}
+	document.getElementById('answerButtonDefault3').className =
+		'answerButtonSelected'
+	document.getElementById('answerOptionText3').className =
+		'answerOptionTextSelected'
+	document.getElementById('submitButton').className = 'submitButtonWorking'
+	answerChosen = true
 }
 
 function clickAnswerButton4() {
-	if (answerChosen === false) {
-		document.getElementById('answerButtonDefault4').className =
-			'answerButtonSelected'
-		document.getElementById('answerOptionText4').className =
-			'answerOptionTextSelected'
-		document.getElementById('submitButton').className = 'submitButtonWorking'
-		answerChosen = true
+	for (let i = 1; i < 5; i++) {
+		document.getElementById(`answerButtonDefault${i}`).className =
+			'answerButtonDefault'
+		document.getElementById(`answerOptionText${i}`).className =
+			'answerOptionText'
 	}
+	document.getElementById('answerButtonDefault4').className =
+		'answerButtonSelected'
+	document.getElementById('answerOptionText4').className =
+		'answerOptionTextSelected'
+	document.getElementById('submitButton').className = 'submitButtonWorking'
+	answerChosen = true
 }
 
 function proceedToTheNextQuestion() {
@@ -282,7 +294,7 @@ function checkAnswer() {
 				document.getElementById(`answerButtonDefault${i + 1}`).className ===
 				'answerButtonSelected'
 			) {
-				if (questions[currentQuestionIndex].answers[i].correct === true) {
+				if (shuffledArray[currentQuestionIndex].answers[i].correct === true) {
 					score++
 				}
 			}
@@ -292,7 +304,7 @@ function checkAnswer() {
 			if (
 				document.getElementById(`answerButtonDefault${i + 1}`).className ==
 					'answerButtonSelected' &&
-				questions[currentQuestionIndex].answers[i].correct == false
+				shuffledArray[currentQuestionIndex].answers[i].correct == false
 			) {
 				document.getElementById(`answerButtonDefault${i + 1}`).className =
 					'answerButtonIncorrect'
@@ -300,7 +312,7 @@ function checkAnswer() {
 					'answerOptionTextIncorrect'
 			}
 
-			if (questions[currentQuestionIndex].answers[i].correct == true) {
+			if (shuffledArray[currentQuestionIndex].answers[i].correct == true) {
 				document.getElementById(`answerButtonDefault${i + 1}`).className =
 					'answerButtonCorrect'
 				document.getElementById(`answerOptionText${i + 1}`).className =
@@ -317,4 +329,5 @@ function checkAnswer() {
 
 function restart() {
 	location.reload()
+	let shuffledArray = questions.sort(() => Math.random() - 0.5)
 }
