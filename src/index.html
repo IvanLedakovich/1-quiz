@@ -9,41 +9,39 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<title>Super Quiz</title>
+		<title>SuperQuiz</title>
 	</head>
 
 	<body>
-		<div id="startCircleDiv" class="circle">
+		<section id="startCircleDiv" class="circle">
 			<span id="startCircle" class="dot">
 				<h1 id="startTheQuizText" class="startTheQuiz">Start The Quiz!</h1>
 			</span>
-		</div>
+		</section>
 
-		<div id="stepsFrame" class="stepsFrame">
+		<section id="stepsFrame" class="stepsFrame">
 			<div id="additionalContainer" class="additionalContainer">
 				<div id="stepsLine" class="stepsLine"></div>
 				<div id="stepsNumbersFrame" class="stepsNumbersFrame"></div>
 			</div>
-		</div>
+		</section>
 
-		<div id="questionContainer" class="questionContainer">
+		<section id="questionContainer" class="questionContainer">
 			<div id="questionBox" class="questionBox"></div>
-			<h1 id="questionText" class="questionText"></h1>
-		</div>
+			<h4 id="questionText" class="questionText"></h4>
+		</section>
 
-		<div id="answersBox" class="answersBox"></div>
+		<section id="answersBox" class="answersBox"></section>
 
-		<div id="submitButton" class="submitButtonDefault"></div>
-		<h1 id="submitText" class="submitText">Submit</h1>
-		<div id="nextButton" class="nextButton"></div>
-		<h1 id="nextButtonText" class="nextButtonText">Next</h1>
+		<button id="submitButton" class="submitButtonDefault">Submit</button>
+		<button id="nextButton" class="nextButton">Next</button>
 
 		<h1 id="scoreText" class="scoreText">Your score is !</h1>
-		<div id="scoreCircle" class="startAgainCircle">
+		<section id="scoreCircle" class="startAgainCircle">
 			<span id="startAgainDot" class="dotStartAgain">
-				<h1 id="startAgainText" class="startAgain">Start Again</h1>
+				<h2 id="startAgainText" class="startAgain">Start Again</h2>
 			</span>
-		</div>
+		</section>
 
 		<script type="module" src="script.mjs"></script>
 	</body>

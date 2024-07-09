@@ -59,9 +59,7 @@ for (let i = 1; i < 5; i++) {
 }
 
 let submitButton = document.getElementById('submitButton')
-let submitText = document.getElementById('submitText')
 let nextButton = document.getElementById('nextButton')
-let nextButtonText = document.getElementById('nextButtonText')
 
 let startAgainDot = document.getElementById('startAgainDot')
 let startAgainText = document.getElementById('startAgainText')
@@ -83,9 +81,7 @@ for (let i = 1; i < 5; i++) {
 }
 
 submitButton.addEventListener('click', () => checkAnswer())
-submitText.addEventListener('click', () => checkAnswer())
 nextButton.addEventListener('click', () => proceedToTheNextQuestion())
-nextButtonText.addEventListener('click', () => proceedToTheNextQuestion())
 
 startAgainDot.addEventListener('click', () => restart())
 startAgainText.addEventListener('click', () => restart())
@@ -97,7 +93,6 @@ const startTheQuizFunction = () => {
 	document.getElementById('answersBox').style.display = 'grid'
 	document.getElementById('questionContainer').style.display = 'flex'
 	document.getElementById('submitButton').style.display = 'block'
-	document.getElementById('submitText').style.display = 'block'
 
 	for (let i = 1; i < 5; i++) {
 		document.getElementById(`answerButtonDefault${i}`).style.display = 'block'
@@ -158,7 +153,6 @@ const proceedToTheNextQuestion = () => {
 		document.getElementById('questionBox').style.display = 'none'
 		document.getElementById('questionText').style.display = 'none'
 		document.getElementById('nextButton').style.display = 'none'
-		document.getElementById('nextButtonText').style.display = 'none'
 
 		for (let i = 1; i < 5; i++) {
 			document.getElementById(`answerButtonDefault${i}`).style.display = 'none'
@@ -185,10 +179,8 @@ const proceedToTheNextQuestion = () => {
 		}
 
 		document.getElementById('submitButton').style.display = 'block'
-		document.getElementById('submitText').style.display = 'block'
 		document.getElementById('submitButton').className = 'submitButtonDefault'
 		document.getElementById('nextButton').style.display = 'none'
-		document.getElementById('nextButtonText').style.display = 'none'
 
 		for (let i = 0; i < currentQuestionIndex + 1; i++) {
 			document.getElementById(`stepNumberEllipse${i + 1}`).className =
@@ -238,9 +230,7 @@ const checkAnswer = () => {
 		}
 
 		document.getElementById('submitButton').style.display = 'none'
-		document.getElementById('submitText').style.display = 'none'
 		document.getElementById('nextButton').style.display = 'block'
-		document.getElementById('nextButtonText').style.display = 'block'
 	}
 }
 
