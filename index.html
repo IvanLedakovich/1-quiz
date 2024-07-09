@@ -13,78 +13,25 @@
 	</head>
 
 	<body>
-		<div id="startCircleDiv" class="circle" onclick="startTheQuizFunction()">
-			<span id="startCircle" class="dot" onclick="startTheQuizFunction()">
-				<h1
-					id="startTheQuizText"
-					class="startTheQuiz"
-					onclick="startTheQuizFunction()"
-				>
-					Start The Quiz!
-				</h1>
+		<div id="startCircleDiv" class="circle">
+			<span id="startCircle" class="dot">
+				<h1 id="startTheQuizText" class="startTheQuiz">Start The Quiz!</h1>
 			</span>
 		</div>
 
 		<div id="stepsFrame" class="stepsFrame">
 			<div id="additionalContainer" class="additionalContainer">
 				<div id="stepsLine" class="stepsLine"></div>
-				<div id="stepsNumbersFrame" class="stepsNumbersFrame">
-					<div id="stepNumberEllipse1" class="stepNumberEllipse">
-						<h1 id="stepNumber1" class="stepNumber">1</h1>
-					</div>
-					<div id="stepNumberEllipse2" class="stepNumberEllipse">
-						<h1 id="stepNumber2" class="stepNumber">2</h1>
-					</div>
-					<div id="stepNumberEllipse3" class="stepNumberEllipse">
-						<h1 id="stepNumber3" class="stepNumber">3</h1>
-					</div>
-					<div id="stepNumberEllipse4" class="stepNumberEllipse">
-						<h1 id="stepNumber4" class="stepNumber">4</h1>
-					</div>
-					<div id="stepNumberEllipse5" class="stepNumberEllipse">
-						<h1 id="stepNumber5" class="stepNumber">5</h1>
-					</div>
-					<div id="stepNumberEllipse6" class="stepNumberEllipse">
-						<h1 id="stepNumber6" class="stepNumber">6</h1>
-					</div>
-					<div id="stepNumberEllipse7" class="stepNumberEllipse">
-						<h1 id="stepNumber7" class="stepNumber">7</h1>
-					</div>
-					<div id="stepNumberEllipse8" class="stepNumberEllipse">
-						<h1 id="stepNumber8" class="stepNumber">8</h1>
-					</div>
-					<div id="stepNumberEllipse9" class="stepNumberEllipse">
-						<h1 id="stepNumber9" class="stepNumber">9</h1>
-					</div>
-					<div id="stepNumberEllipse10" class="stepNumberEllipse">
-						<h1 id="stepNumber10" class="stepNumber">10</h1>
-					</div>
-				</div>
+				<div id="stepsNumbersFrame" class="stepsNumbersFrame"></div>
 			</div>
 		</div>
 
 		<div id="questionContainer" class="questionContainer">
 			<div id="questionBox" class="questionBox"></div>
-			<h1 id="questionText" class="questionText">
-				An interface design application that runs in the browser with team-based
-				collaborative design projects
-			</h1>
+			<h1 id="questionText" class="questionText"></h1>
 		</div>
 
-		<div id="answersBox" class="answersBox">
-			<div id="answerButtonDefault1" class="answerButtonDefault">
-				<div id="answerOptionText1" class="answerOptionText"></div>
-			</div>
-			<div id="answerButtonDefault2" class="answerButtonDefault">
-				<div id="answerOptionText2" class="answerOptionText"></div>
-			</div>
-			<div id="answerButtonDefault3" class="answerButtonDefault">
-				<div id="answerOptionText3" class="answerOptionText"></div>
-			</div>
-			<div id="answerButtonDefault4" class="answerButtonDefault">
-				<div id="answerOptionText4" class="answerOptionText"></div>
-			</div>
-		</div>
+		<div id="answersBox" class="answersBox"></div>
 
 		<div id="submitButton" class="submitButtonDefault"></div>
 		<h1 id="submitText" class="submitText">Submit</h1>
@@ -93,13 +40,11 @@
 
 		<h1 id="scoreText" class="scoreText">Your score is !</h1>
 		<div id="scoreCircle" class="startAgainCircle">
-			<span onclick="restart()" id="startAgainDot" class="dotStartAgain">
-				<h1 onclick="restart()" id="startAgainText" class="startAgain">
-					Start Again
-				</h1>
+			<span id="startAgainDot" class="dotStartAgain">
+				<h1 id="startAgainText" class="startAgain">Start Again</h1>
 			</span>
 		</div>
 
-		<script src="script.js"></script>
+		<script type="module" src="script.mjs"></script>
 	</body>
 </html>
