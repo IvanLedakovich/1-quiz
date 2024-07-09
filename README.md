@@ -2,9 +2,13 @@
 permalink: /src/index.html
 ---
 
-# Interactive Quiz Game using only JS, HTML, CSS
+# Супер крутая викторина с вариантами ответов, трекингом прогресса и количеством очков!
 
-## Tech stack: HTML, CSS, JavaScript (no frameworks and libs allowed)
+## Просто запустите index.html и наслаждайтесь! Проект также задеплоен на GithubPages:
+
+https://ledakovichivan.github.io/1-quiz/src/
+
+Технические детали:
 
 ```
 HTML/CSS Design:
@@ -24,8 +28,4 @@ Quiz Data Storage:
 -> Quiz questions and corresponding answers are stored in an array.
 -> There are 10 questions with 4 options.
 -> Randomized order of questions to enhance user engagement.
-
-Git Repository:
--> Used a public github repository.
--> Repository has a README file outlining the project description, requirements
 ```
